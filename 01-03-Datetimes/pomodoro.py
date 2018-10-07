@@ -24,6 +24,7 @@ To fix:
 -format pomodoro_timer/short_break/long_break to have a consistant
  output
 -Single function call to print to screen
+-Clean up screen print, maybe clear the screen for the duration of the timer.
 '''
 
 #imports
@@ -37,7 +38,7 @@ def pomodoro_timer(task_name='my_task'):
 
     #define starting and ending times
     start_time = datetime.now()
-    end_time = start_time + timedelta(seconds=25*60)
+    end_time = start_time + timedelta(seconds=25)#*60
 
 
     while datetime.now() < end_time:
@@ -77,7 +78,17 @@ def long_break(duration = 15):
         time.sleep(1)
 
 
-if __name__ == "__mai
-n__":
+if __name__ == "__main__":
     #pomodoro_timer()
-    long_break()
+    #long_break()
+    for i in range(3):
+        var = input('\rTask Name: ')
+        pomodoro_timer(var)
+
+        var = input('\rShort Break Time! How long: ')
+        short_break(int(var))
+
+    var = input('Task Name: ')
+    pomodoro_timer(var)
+
+    var = input('\rLong Break Time! How long: ')
