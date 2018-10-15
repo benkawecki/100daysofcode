@@ -7,7 +7,7 @@ from collections import defaultdict, namedtuple, counter, deque
 ```
 
 ## Named tuple
-Convenient way to create Class without methods. Named touples are the same as normal touples except their values can be access with .fieldname. Named touples are still immutable and can still be iterated over. They present an alternative to creating read only classes.
+Convenient way to create Class without methods. Named tuples are the same as normal touples except their values can be access with .fieldname. Named touples are still immutable and can still be iterated over. They present an alternative to creating read only classes.
 
 ```python
 #create a named touple
