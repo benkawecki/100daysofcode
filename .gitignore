@@ -1,0 +1,3 @@
+# compiled code
+*.pyc
+__pychache__/
