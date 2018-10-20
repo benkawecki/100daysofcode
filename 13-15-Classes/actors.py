@@ -19,16 +19,16 @@ class Roll:
     def __repr__(self):
         return '{}({})'.format(self.__class__, self.name)
 
-    def battles(self, other):
+    def batles(self, other):
         '''takes two rock objects and returns the winning rock or None'''
         rules = {'rock': 'scissors',
                  'paper': 'rock',
                  'scissors': 'paper'}
 
         if rules[self.name] == other.name:
-            return self
+            return True
         elif rules[other.name] == self.name:
-            return other
+            return False
         else:
             return None
 
