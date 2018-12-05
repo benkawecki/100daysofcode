@@ -1,3 +1,4 @@
 # compiled code
 *.pyc
 __pychache__/
+40-42-JSON/json_secrets.py
